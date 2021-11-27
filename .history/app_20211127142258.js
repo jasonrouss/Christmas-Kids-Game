@@ -9,6 +9,7 @@ class AudioController {
     this.victorySound = new Audio(
       "https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Audio/victory.wav"
     );
+    this.gameOverSound = new Audio("Assets/Audio/gameOver.wav");
   }
 
   flip() {
@@ -19,6 +20,9 @@ class AudioController {
   }
   victory() {
     this.victorySound.play();
+  }
+  gameOver() {
+    this.gameOverSound.play();
   }
 }
 
@@ -56,7 +60,7 @@ class MixOrMatch {
   }
   gameOver() {
     clearInterval(this.countdown);
-
+    this.audioController.gameOver();
     document.getElementById("game-over-text").classList.add("visible");
   }
   victory() {
@@ -153,43 +157,44 @@ function ready() {
     card.addEventListener("click", () => {
       game.flipCard(card);
     });
-    function playAudioBot() {
-      var bottes = document.getElementById("bottes");
-      bottes.play();
-    }
-
-    function playAudioBou() {
-      var boule = document.getElementById("boule");
-      boule.play();
-    }
-
-    function playAudioCad() {
-      var cadeau = document.getElementById("cadeau");
-      cadeau.play();
-    }
-
-    function playAudioEto() {
-      var etoile = document.getElementById("etoile");
-      etoile.play();
-    }
-
-    function playAudioLut() {
-      var lutin = document.getElementById("lutin");
-      lutin.play();
-    }
-
-    function playAudioRei() {
-      var reinne = document.getElementById("reinne");
-      reinne.play();
-    }
-
-    function playAudioSap() {
-      var sapin = document.getElementById("sapin");
-      sapin.play();
-    }
-    function playAudioTra() {
-      var trainneau = document.getElementById("trainneau");
-      trainneau.play();
-    }
   });
+}
+
+function playAudioBot() {
+  var bottes = document.getElementById("bottes");
+  bottes.play();
+}
+
+function playAudioBou() {
+  var boule = document.getElementById("boule");
+  boule.play();
+}
+
+function playAudioCad() {
+  var cadeau = document.getElementById("cadeau");
+  cadeau.play();
+}
+
+function playAudioEto() {
+  var etoile = document.getElementById("etoile");
+  etoile.play();
+}
+
+function playAudioLut() {
+  var lutin = document.getElementById("lutin");
+  lutin.play();
+}
+
+function playAudioRei() {
+  var reinne = document.getElementById("reinne");
+  reinne.play();
+}
+
+function playAudioSap() {
+  var sapin = document.getElementById("sapin");
+  sapin.play();
+}
+function playAudioTra() {
+  var trainneau = document.getElementById("trainneau");
+  trainneau.play();
 }
