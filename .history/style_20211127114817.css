@@ -72,10 +72,6 @@ body {
 .card.matched .card-value {
   animation: dance 1s linear infinite 500ms;
 }
-img {
-  height: 150px !important;
-  width: 110px !important;
-}
 
 .overlay-text {
   display: none;
