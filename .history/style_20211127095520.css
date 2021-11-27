@@ -4,6 +4,8 @@
 
 html {
   min-height: 100vh;
+  cursor: url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Cursors/Ghost.cur"),
+    auto;
 }
 
 body {
@@ -46,6 +48,11 @@ body {
   width: 125px;
 }
 
+.card:hover {
+  cursor: url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Cursors/GhostHover.cur"),
+    auto;
+}
+
 .card-face {
   position: absolute;
   width: 100%;
@@ -54,7 +61,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   border-radius: 12px;
   border-width: 1px;
   border-style: solid;

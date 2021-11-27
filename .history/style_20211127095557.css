@@ -54,7 +54,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   border-radius: 12px;
   border-width: 1px;
   border-style: solid;
