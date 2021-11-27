@@ -8,7 +8,7 @@ html {
 
 body {
   margin: 0;
-  background: #ff2e2e;
+  background: radial-gradient(#a30000, #e3e4e5);
 }
 
 .page-title {
