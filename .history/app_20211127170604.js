@@ -12,9 +12,6 @@ class AudioController {
     this.victorySound = new Audio(
       "https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Audio/victory.wav"
     );
-    this.gameOverSound = new Audio("Assets/Audio/gameOver.wav");
-    this.bgMusic.volume = 0.5;
-    this.bgMusic.loop = true;
   }
   startMusic() {
     this.bgMusic.play();
@@ -30,12 +27,7 @@ class AudioController {
     this.matchSound.play();
   }
   victory() {
-    this.stopMusic();
     this.victorySound.play();
-  }
-  gameOver() {
-    this.stopMusic();
-    this.gameOverSound.play();
   }
 }
 
@@ -56,7 +48,6 @@ class MixOrMatch {
     this.matchedCards = [];
     this.busy = true;
     setTimeout(() => {
-      this.audioController.startMusic();
       this.shuffleCards(this.cardsArray);
       this.countdown = this.startCountdown();
       this.busy = false;
