@@ -129,9 +129,9 @@ body {
 }
 
 .card-front {
-  background-color: #ea4630;
+  background-color: #b1bcdb;
 
-  border: 3px solid #bb2528;
+  border: 3px solid #162a72;
   transform: rotateY(180deg);
 }
 
