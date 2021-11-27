@@ -166,8 +166,13 @@ function playAudioBot() {
 }
 
 function playAudioBou() {
-  var boule = document.getElementById("boule");
+  var cadeau = document.getElementById("boule");
   boule.play();
+}
+
+function playAudioCad() {
+  var cadeau = document.getElementById("cadeau");
+  cadeau.play();
 }
 
 function playAudioCad() {

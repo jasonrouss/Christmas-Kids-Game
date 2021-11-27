@@ -170,31 +170,7 @@ function playAudioBou() {
   boule.play();
 }
 
-function playAudioCad() {
-  var cadeau = document.getElementById("cadeau");
-  cadeau.play();
-}
-
-function playAudioEto() {
-  var etoile = document.getElementById("etoile");
-  etoile.play();
-}
-
-function playAudioLut() {
-  var lutin = document.getElementById("lutin");
-  lutin.play();
-}
-
-function playAudioRei() {
-  var reinne = document.getElementById("reinne");
-  reinne.play();
-}
-
-function playAudioSap() {
-  var sapin = document.getElementById("sapin");
-  sapin.play();
-}
-function playAudioTra() {
-  var trainneau = document.getElementById("trainneau");
-  trainneau.play();
+function playAudioBot() {
+  var boule = document.getElementById("boule");
+  boule.play();
 }

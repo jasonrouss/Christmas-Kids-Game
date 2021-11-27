@@ -166,7 +166,7 @@ function playAudioBot() {
 }
 
 function playAudioBou() {
-  var boule = document.getElementById("boule");
+  var cadeau = document.getElementById("boule");
   boule.play();
 }
 
