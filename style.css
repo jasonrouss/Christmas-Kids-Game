@@ -150,8 +150,7 @@ img {
 
 @media (max-width: 600px) {
   .game-container {
-    grid-template-columns: repeat(6, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(2, auto);
   }
 
   .game-info-container {
