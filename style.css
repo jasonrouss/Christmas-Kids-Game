@@ -8,11 +8,11 @@ html {
 
 body {
   margin: 0;
-  background: #ff2e2e;
+  background: #c03b3b;
 }
 
 .page-title {
-  color: #162a72;
+  color: #031450;
   font-family: "Mountains of Christmas", cursive;
   font-weight: normal;
   text-align: center;
@@ -27,7 +27,7 @@ body {
 
 .game-info {
   font-family: "Mountains of Christmas", cursive;
-  color: #162a72;
+  color: #031450;
   font-size: 4em;
 }
 
@@ -88,7 +88,7 @@ img {
   justify-content: center;
   align-items: center;
   z-index: 100;
-  color: #162a72;
+  color: #031450;
   font-family: "Mountains of Christmas", cursive;
 }
 
@@ -108,7 +108,7 @@ img {
     font-size: 0;
   }
   to {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(159, 157, 157, 0.2);
     font-size: 10em;
   }
 }
@@ -129,13 +129,13 @@ img {
 .card-back {
   background-color: #b1bcdb;
 
-  border: 3px solid #162a72;
+  border: 3px solid #031450;
 }
 
 .card-front {
   background-color: #b1bcdb;
 
-  border: 3px solid #162a72;
+  border: 3px solid #031450;
   transform: rotateY(180deg);
 }
 
